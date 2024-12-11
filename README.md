@@ -1,0 +1,1 @@
+# exercise-ai-seminar
