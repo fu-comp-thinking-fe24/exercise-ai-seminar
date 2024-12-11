@@ -38,6 +38,59 @@ box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 
 Vilka språkliga skillnader, om det finns några, kan ni se?
 
+### 06
+
+Klista in följande prompt i ChatGPT:
+
+```
+Skriv om följande kod så att den fungerar:
+
+import { errorHandler } from "../../middlewares/errorHandler.mjs";
+import { validateKey } from "../../middlewares/validateKey.mjs";
+import { validateRegistration } from "../../middlewares/validateRegistration.mjs";
+import { sendResponse } from "../../responses/index.mjs";
+import middy from '@middy/core';
+import { db } from "../../services/db.mjs";
+import { hashPassword } from "../../utils/index.mjs";
+
+export const handler = middy(async (event) => {
+    const user = JSON.parse(event.body);
+
+    try {
+        await db.put({
+            TableName: 'user-db',
+            Item: {
+                username : user.username,
+                password : await hashPassword(user.password)
+            }
+        }); 
+    } catch(error) {
+        return sendResponse(404, { message : 'Could not add user'});
+    }
+
+  return sendResponse(201, 'Registration successful!');
+}).use(validateKey())
+  .use(validateRegistration())
+  .use(errorHandler());
+
+```
+
+Upprepa sedan steget ytterligare tre gånger genom att skriva ```Skriv om följande kod så att den fungerar:```, och klistra in den kod ChatGPT föreslagit under föregående runda.
+
+Får ni någon gång tillbaks samma kod som ni först skickade in? Gissningsvis kommer ChatGPT lägga till ```.promise()``` i slutet av följande del i koden:
+
+```
+await db.put({
+    TableName: 'user-db',
+    Item: {
+        username: user.username,
+        password: hashedPassword,
+    },
+}).promise();
+```
+
+Detta är en utdaterad funktion som inte längre fungerar på den typ av databasanrop vi gör. Varför tror ni att ChatGPT isåfall föreslår den lösningen?
+
 ### 06 - Anpassa ChatGPT
 
 Be ChatGPT att beskriva skillnaderna mellan begreppen *pattern recognition* och *abstraction*, samt att ge exempel.
