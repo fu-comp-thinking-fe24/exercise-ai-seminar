@@ -91,7 +91,7 @@ await db.put({
 
 Detta är en utdaterad funktion som inte längre fungerar på den typ av databasanrop vi gör. Varför tror ni att ChatGPT isåfall föreslår den lösningen?
 
-### 06 - Anpassa ChatGPT
+### 07 - Anpassa ChatGPT
 
 Be ChatGPT att beskriva skillnaderna mellan begreppen *pattern recognition* och *abstraction*, samt att ge exempel.
 
@@ -113,7 +113,7 @@ Testa därefter att ställa samma fråga som innan om skillnaderna mellan begrep
 
 Skiljer sig svaren åt, och isåfall på vilket sätt? Märker ni om er anpassning gjorde någon skillnad.
 
-### 07
+### 08
 
 Klistra in följande prompt i ChatGPT:
 
@@ -123,11 +123,11 @@ Kan du skapa en funktion som tar emot ett ord och returnerar ordet med en stor b
 
 Ta sedan bort era anpassningar och ställ samma fråga igen. Märker ni några skillnader i sättet som ChatGPT svarar?
 
-### 08
+### 09
 
 I vilka scenarion kan ni som **studenter** känna att det är okej att be AI om hjälp? Och i vilka scenarion är det inte okej?
 
-### 09
+### 10
 
 Förutom att åka dit för fusk, diskutera vilka de tre största riskerna för er som **studenter** är att använda er av AI verktyg för att lösa era uppgifter.
 
@@ -135,35 +135,35 @@ Förutom att åka dit för fusk, diskutera vilka de tre största riskerna för e
 
 Titta på [denna film om Github Copilot](https://www.youtube.com/watch?v=hPVatUSvZq0).
 
-### 10
+### 11
 
 Vilka styrkor och svagheter / risker ser ni hos Github Copilot för er som **studenter**?
 
-### 11
+### 12
 
 Kan ni se några scenarion för er som **studerande** där Github Copilot skulle vara okej att använda?
 
-### 12
+### 13
 
 Vad tycker ni verkar vara mest "najs" med Github Copilot?
 
 ## AI i yrkeslivet
 
-### 13 
+### 14 
 
 Hur ser ni på våra roller som utvecklare i framtiden, där vissa oroliga röster höjs inför hotet om AI som skall ta över våra jobb på lång sikt?
 
-### 14
+### 15
 
 Vilka risker ser ni med att använda sig av AI som en källa för kodskrivande i yrkeslivet?
 
 ## AI Generellt
 
-### 15 
+### 16
 
 Vilka andra AI tjänster kan vara relevanta för oss utvecklare att känna till och använda oss utav. Leta reda på 3 tjänster och skriv 3-4 menigar om vardera.
 
-### 16
+### 17
 
 Av de verktyg som ni letat upp samt de som tagits upp i tidigare frågor, vilket tror ni att ni skulle ha mest användning av i er roll som **studerande**, samt i er yrkesroll? Motivera.
 
