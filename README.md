@@ -21,7 +21,6 @@ Klista in ett av svaren och skriv från vilken tjänst lösningen kommer från.
 
 Be ChatGPT och Aizo att fixa den färdiga JavaScript-koden för spelet, samt att logga ut kontroller och resultat i konsollen. Testa koden i det medskickade programmet om det fungerar och redovisa resultat.
 
-
 ## AI som studiekamrat
 
 ### 04
